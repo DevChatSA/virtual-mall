@@ -1,0 +1,17 @@
+@import '`@angular/material/theming';
+
+/*unlocking base styles*/
+@include mat-core();
+
+/*defining/unlocking palettes for material design*/
+$candy-theming-primary: mat-palette($mat-indigo);
+$candy-theming-accent: mat-palette($mat-pink, A200, A100 , A400);
+
+/*warning calor*/
+$candy-theming-warn: mat-palette($mat-red);
+
+/*theme objects changes backround*/
+$candy-theming-theme: mat-light-theme($candy-theming-primary, $candy-theming-accent, $candy-theming-warn);
+
+/*this inject with the default and overides the colors there*/
+@include angular-material-theme($candy-theming-theme);
