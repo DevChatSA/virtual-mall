@@ -31,6 +31,10 @@
               "src/assets"
             ],
             "styles": [
+              {
+
+                "inputs":"src/theme/material/index.scss"
+              },
               "src/styles.scss"
             ],
             "scripts": []
